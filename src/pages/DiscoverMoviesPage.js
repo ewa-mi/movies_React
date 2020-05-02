@@ -11,7 +11,7 @@ export default function DiscoverMoviesPage(event) {
     const queryParam = encodeURIComponent(searchText);
 
     const data = await fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=92a2cc20&s=${queryParam}`
+      `https://www.omdbapi.com/?i=tt3896198&apikey=92a2cc20&s=${queryParam}`
     ).then((r) => r.json());
 
     setMovies(data.Search);
