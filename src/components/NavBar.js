@@ -4,18 +4,12 @@ import "./NavBar.css";
 
 export default function NavBar() {
   return (
-    <div>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/discover">Discover</NavLink>
-        </li>
-      </ul>
+    <div className="menu">
+      <NavLink to="/">Home</NavLink>
+
+      <NavLink to="/about">About</NavLink>
+
+      <NavLink to="/discover">Discover</NavLink>
     </div>
   );
 }

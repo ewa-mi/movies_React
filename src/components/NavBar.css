@@ -1,5 +1,7 @@
-li {
+a {
   font-size: 20px;
-  color: rgb(255, 0, 212);
-  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 23px;
+  font-family: Helvetica, sans-serif;
 }

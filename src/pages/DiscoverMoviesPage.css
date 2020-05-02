@@ -3,3 +3,8 @@
   font-size: 60px;
   text-align: center;
 }
+
+.movies {
+  display: inline-table;
+  padding: 10px;
+}
