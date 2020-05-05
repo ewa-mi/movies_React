@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./DiscoverMoviesPage.css";
 
-export default function DiscoverMoviesPage(event) {
+export default function DiscoverMoviesPage() {
   const [searchText, set_searchText] = useState("");
   const [movies, setMovies] = useState([]);
 
   const search = async () => {
-    console.log("Start searching for:", searchText);
-
     const queryParam = encodeURIComponent(searchText);
 
     const data = await fetch(
@@ -35,7 +33,6 @@ export default function DiscoverMoviesPage(event) {
                 <p>Title: {movie.Title}</p>
                 <p>Year: {movie.Year}</p>
                 <p>Type: {movie.Type}</p>
-
                 <img src={movie.Poster} />
               </div>
             );
